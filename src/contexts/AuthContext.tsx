@@ -15,7 +15,7 @@ const AuthContext = createContext<null | AuthContextType>(null);
 const AuthProvider = ({ children }: any) => {
     const [loading, setLoading] = useState(false);
     const [user, setUser] = useState<Record<string, any> | null>(null);
-    const [token, setToken] = useState<string | null>(null);
+    const [_, setToken] = useState<string | null>(null);
     const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
 
     const validateEmail = (email: string): boolean =>

@@ -7,7 +7,7 @@ const UploadCans = () => {
     const [uploading, setUploading] = useState(false);
     const [message, setMessage] = useState<string | null>(null);
     const [invalidRows, setInvalidRows] = useState<any[]>([]);
-    const [insertedCount, setInsertedCount] = useState<number>(0);
+    const [_, setInsertedCount] = useState<number>(0);
     const [dragActive, setDragActive] = useState(false);
 
     const handleFile = (file: File) => {
